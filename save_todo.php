@@ -13,13 +13,12 @@ if ($conn->connect_error) {
 }
 
 // Mengambil data dari formulir
-$Nomor = $_POST['Nomor'];
 $kegiatan = $_POST['kegiatan'];
 $tanggal = $_POST['tanggal'];
 $status = $_POST['status'];
 
 // Menyimpan data ke tabel
-$sql = "INSERT INTO tb_list (Nomor,kegiatan, tanggal, status) VALUES ('$Nomor', '$kegiatan', '$tanggal', '$status')";
+$sql = "INSERT INTO tb_list (kegiatan, tanggal, status) VALUES ( '$kegiatan', '$tanggal', '$status')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil disimpan";
