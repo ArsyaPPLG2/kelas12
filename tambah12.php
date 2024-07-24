@@ -19,7 +19,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             width: 300px;
-            
         }
         input[type="text"], input[type="date"], select {
             width: 100%;
@@ -45,10 +44,6 @@
     <div class="todo-container">
         <h2>Tambah Kegiatan</h2>
         <form action="save_todo.php" method="POST">
-
-            <label for="no">Nomor:</label></br>
-            <input type="Number" id="nomor" name="nomor" required></br>
-
             <label for="kegiatan">Kegiatan:</label>
             <input type="text" id="kegiatan" name="kegiatan" required>
             
